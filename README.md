@@ -1,5 +1,8 @@
 # image-steganography
-A tool to hide data in image
+A tool to hide data in image.  
+
+Data is protected with AES-GCM. First data is encrypted with the key and then it is injected into the image.  
+Since GCM requires nonce, the output for same image, same unencrypted data and same key will be different everytime.  
 
 ## Installation
 ```
